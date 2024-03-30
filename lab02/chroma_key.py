@@ -40,13 +40,13 @@ im_bg = cv2.bitwise_and(im_bg, im_bg_msk)
 #im_fg= cv2.add(im_bg, im_fg)
 
 #mostra imagens intermediarias com matplotlib
-plt.subplot(321), plt.imshow(im_background, cmap='gray')
+""" plt.subplot(321), plt.imshow(im_background, cmap='gray')
 plt.subplot(322), plt.imshow(im_foreground, cmap='gray')
 plt.subplot(323), plt.imshow(im_bg_msk, cmap='gray')
 plt.subplot(324), plt.imshow(im_fg_msk, cmap='gray')
 plt.subplot(325), plt.imshow(im_bg, cmap='gray')
 plt.subplot(326), plt.imshow(im_fg, cmap='gray')
-plt.show()
+plt.show() """
 
 #resultado final
 im_result = cv2.add(im_bg, im_fg)
